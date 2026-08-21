@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        YD | Products
+    </title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.min.css" rel="stylesheet" />
+    <link href="css/style.css?v=20260812-07" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- =====================
+HEADER
+===================== -->
+    <header id="main-header">
+        <div class="navbar">
+            <div class="brand-area">
+                <a class="logo-link" href="index.html">
+                    <img alt="YD Logo" src="images/header/logo.png" />
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li>
+                    <a href="index.html">
+                        HOME
+                    </a>
+                </li>
+                <li>
+                    <a href="products.html">
+                        PRODUCTS
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        ABOUT YD
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        CONTACT
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- =====================
+PRODUCT HERO
+===================== -->
+    <section class="hero-new product-hero">
+        <!-- Replace the src below with your own hero image path -->
+        <img alt="Products hero banner" class="hero-img" src="images/other/40.png" />
+        <div class="hero-overlay">
+        </div>
+        <div class="hero-content">
+            <h1>
+                OUR PRODUCTS
+            </h1>
+            <p>
+                Professional Water Sports Equipment Solutions
+            </p>
+        </div>
+    </section>
+    <!-- =====================
+PRODUCT COLLECTIONS
+===================== -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>
+                    Explore Our Product Collections
+                </h2>
+                <p>
+                    Discover our five major product categories.
+                </p>
+            </div>
+            <div class="collections-grid">
+                <div class="collection-card">
+                    <img src="images/other/42.png" />
+                    <div class="collection-overlay">
+                        <h3>
+                            Paddles
+                        </h3>
+                        <span>
+                            Precision Craftsmanship &amp; Max Power
+                        </span>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <img src="images/other/44.png" />
+                    <div class="collection-overlay">
+                        <h3>
+                            Inflatables
+                        </h3>
+                        <span>
+                            Premium Portable Watersports Gear
+                        </span>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <img src="images/other/41.jpg" />
+                    <div class="collection-overlay">
+                        <h3>
+                            Hydrofoils
+                        </h3>
+                        <span>
+                            Next-Gen Gliding &amp; Flight Tech
+                        </span>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <img src="images/other/43.png" />
+                    <div class="collection-overlay">
+                        <h3>
+                            Boards
+                        </h3>
+                        <span>
+                            High-Performance Marine Craft
+                        </span>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <img src="images/other/45.png" />
+                    <div class="collection-overlay">
+                        <h3>
+                            Accessories
+                        </h3>
+                        <span>
+                            Complete One-Stop Equipment
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =====================
+PRODUCT FILTER
+===================== -->
+    <section class="product-showcase-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>
+                    Product Showcase
+                </h2>
+                <p>
+                    Find the right solution for your business.
+                </p>
+            </div>
+            <div class="product-filter">
+                <button aria-pressed="true" class="filter-btn active" onclick="filterProducts('all',this)"
+                    type="button">
+                    ALL
+                </button>
+                <button aria-pressed="false" class="filter-btn" onclick="filterProducts('paddles',this)" type="button">
+                    PADDLES
+                </button>
+                <button aria-pressed="false" class="filter-btn" onclick="filterProducts('inflatables',this)"
+                    type="button">
+                    INFLATABLES
+                </button>
+                <button aria-pressed="false" class="filter-btn" onclick="filterProducts('hydrofoils',this)"
+                    type="button">
+                    HYDROFOILS
+                </button>
+                <button aria-pressed="false" class="filter-btn" onclick="filterProducts('boards',this)" type="button">
+                    BOARDS
+                </button>
+                <button aria-pressed="false" class="filter-btn" onclick="filterProducts('accessories',this)"
+                    type="button">
+                    ACCESSORIES
+                </button>
+            </div>
+            <div class="products-grid product-showcase-grid">
+                <div class="product-card" data-category="paddles">
+                    <div class="product-image-swap">
+                        <img class="product-image-primary" src="images/product/paddle/033_1.png" alt="Skydome Pro Full Carbon 3-Piece Adjustable SUP Paddle" />
+                        <img class="product-image-secondary" data-src="images/product/paddle/033_2.png" alt="Skydome Pro Full Carbon 3-Piece Adjustable SUP Paddle alternate view" />
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">
+                            PADDLES
+                        </span>
+                        <h3>
+                            Skydome Full Carbon 3-Piece Adjustable SUP Paddle
+                        </h3>
+                        <p class="product-features">
+                            Innovative Vortex Lock · Anti-Twist System · Sandblasted Matte Grip
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card" data-category="inflatables">
+                    <div class="product-image-swap">
+                        <img class="product-image-primary" src="images/inflatable.jpg" alt="Inflatable SUP Board" />
+                        <img class="product-image-secondary" data-src="images/inflatable_2.jpg" alt="Inflatable SUP Board alternate view" />
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">
+                            INFLATABLES
+                        </span>
+                        <h3>
+                            XXX
+                        </h3>
+                        <p class="product-features">
+                            XXX
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card" data-category="hydrofoils">
+                    <div class="product-image-swap">
+                        <img class="product-image-primary" src="images/product/hydrofoil/full set of foil_1.jpg" alt="Hydrofoil System" />
+                        <img class="product-image-secondary" data-src="images/product/hydrofoil/full set of foil_2.png" alt="Hydrofoil System alternate view" />
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">
+                            HYDROFOILS
+                        </span>
+                        <h3>
+                            Dolphin Hybrid Carbon Wings<br>All-Round Hydrofoil Set
+                        </h3>
+                        <p class="product-features">
+                            Early & Stable Lift · Hydrodynamic Streamline · Carbon Fiber Wings
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card" data-category="hydrofoils">
+                    <div class="product-image-swap">
+                        <img class="product-image-primary" src="images/product/hydrofoil/T-handle_1.png" alt="Hydrofoil System" />
+                        <img class="product-image-secondary" data-src="images/product/hydrofoil/T-handle_2.png" alt="Hydrofoil System alternate view" />
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">
+                            HYDROFOILS
+                        </span>
+                        <h3>
+                            Full Carbon Fiber Foil Board<br>T-Handlebar For Beginners
+                        </h3>
+                        <p class="product-features">
+                            Enhanced Balance & Control · Foil Scooter Conversion · Non-Slip Ergonomic Grips
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card" data-category="boards">
+                    <div class="product-image-swap">
+                        <img class="product-image-primary" src="images/product/board/foil board long_1.png" alt="SUP Board Series" />
+                        <img class="product-image-secondary" data-src="images/product/board/foil board long_2.png" alt="SUP Board Series alternate view" />
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">
+                            BOARDS
+                        </span>
+                        <h3>
+                            Magnet Foam-Core Full Carbon Hydrofoil Board
+                        </h3>
+                        <p class="product-features">
+                            High Rigidity & Easy Carry · Universal Hydrofoil Mount · Non-Slip EVA Traction Pad
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card" data-category="accessories">
+                    <div class="product-image-swap">
+                        <img class="product-image-primary" src="images/product/accessories/small pump_1.jpg" alt="Compact Double Action Hand Pump With Pressure Gauge" />
+                        <img class="product-image-secondary" data-src="images/product/accessories/small pump_2.png" alt="Compact Double Action Hand Pump With Pressure Gauge alternate view" />
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">
+                            ACCESSORIES
+                        </span>
+                        <h3>
+                            Compact Double Action Hand Pump With Pressure Gauge
+                        </h3>
+                        <p class="product-features">
+                            Inflate & Deflate Modes · Detachable Compact Design · Integrated Pressure Gauge
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card" data-category="paddles">
+                    <div class="product-image-swap">
+                        <img class="product-image-primary" src="images/product/paddle/026_1.png" alt="Laurel Premium Full Carbon 5-Piece Kayak Paddle" />
+                        <img class="product-image-secondary" data-src="images/product/paddle/026_2.png" alt="Laurel Premium Full Carbon 5-Piece Kayak Paddle alternate view" />
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">
+                            PADDLES
+                        </span>
+                        <h3>
+                            Laurel Premium Full Carbon <br>5-Piece Kayak Paddle
+                        </h3>
+                        <p class="product-features">
+                            Compact Storage · Multi-Angle Adjustable · High Stroke Efficiency
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card" data-category="paddles">
+                    <div class="product-image-swap">
+                        <img class="product-image-primary" src="images/product/paddle/greenland paddle_1.png" alt="Laurel Premium Full Carbon 5-Piece Kayak Paddle" />
+                        <img class="product-image-secondary" data-src="images/product/paddle/greenland paddle_2.png" alt="Laurel Premium Full Carbon 5-Piece Kayak Paddle alternate view" />
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">
+                            PADDLES
+                        </span>
+                        <h3>
+                            Virga Full Carbon 2-Piece Touring Greenland Paddle
+                        </h3>
+                        <p class="product-features">
+                            Effortless Rolling & Bracing · Long-Distance Touring · Flatwater Efficiency
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card" data-category="paddles">
+                    <div class="product-image-swap">
+                        <img class="product-image-primary" src="images/product/paddle/land paddle_1.png" alt="Laurel Premium Full Carbon 5-Piece Kayak Paddle" />
+                        <img class="product-image-secondary" data-src="images/product/paddle/land paddle_2.png" alt="Laurel Premium Full Carbon 5-Piece Kayak Paddle alternate view" />
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">
+                            PADDLES
+                        </span>
+                        <h3>
+                            Continent Aluminum 2-Piece Adjustable Land Paddle
+                        </h3>
+                        <p class="product-features">
+                            Replaceable Rubber Tip · High-Grip Pavement Traction · Longboard & Skate Ready
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card" data-category="paddles">
+                    <div class="product-image-swap">
+                        <img class="product-image-primary" src="images/product/paddle/022_carbon_1.png" alt="Orient Ultra Full Carbon 2-Piece Adjustable Dragon Boat Paddle" />
+                        <img class="product-image-secondary" data-src="images/product/paddle/022_carbon_2.png" alt="Orient Ultra Full Carbon 2-Piece Adjustable Dragon Boat Paddle alternate view" />
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">
+                            PADDLES
+                        </span>
+                        <h3>
+                            Orient Ultra Full Carbon 2-Piece Adjustable Dragon Boat Paddle
+                        </h3>
+                        <p class="product-features">
+                            Precise Length Adjust · Full Carbon Rigidity · Optimized For Racing
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card" data-category="paddles">
+                    <div class="product-image-swap">
+                        <img class="product-image-primary" src="images/product/paddle/wooden dragon boat paddle_1.png" alt="Orient Ultra Full Carbon 2-Piece Adjustable Dragon Boat Paddle" />
+                        <img class="product-image-secondary" data-src="images/product/paddle/wooden dragon boat paddle_2.png" alt="Orient Ultra Full Carbon 2-Piece Adjustable Dragon Boat Paddle alternate view" />
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">
+                            PADDLES
+                        </span>
+                        <h3>
+                            Orient Laminated Natural Wood 1-Piece Dragon Boat Paddle
+                        </h3>
+                        <p class="product-features">
+                            Natural Wood Grain · Reinforced Blade Tip · Authentic Heritage Feel
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card" data-category="paddles">
+                    <div class="product-image-swap">
+                        <img class="product-image-primary" src="images/product//paddle/028_1.png" alt="Danube Aluminium 3-Piece Recreational Kayak Paddle" />
+                        <img class="product-image-secondary" data-src="images/product/paddle/028_2.png" alt="Danube Aluminium 3-Piece Recreational Kayak Paddle alternate view" />
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">
+                            PADDLES
+                        </span>
+                        <h3>
+                            Danube Aluminium 3-Piece Recreational Kayak Paddle
+                        </h3>
+                        <p class="product-features">
+                            Cost-Effective & Durable · Beginner-Friendly · Ideal For Rental Fleets
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card" data-category="paddles">
+                    <div class="product-image-swap">
+                        <img class="product-image-primary" src="images/product/paddle/polo_paddle_1.jpg" alt="Carbon Fiber Paddle" />
+                        <img class="product-image-secondary" data-src="images/product/paddle/polo_paddle_2.png" alt="Carbon Fiber Paddle alternate view" />
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">
+                            PADDLES
+                        </span>
+                        <h3>
+                            Carnival Aluminum 2-Piece Adjustable SUP Polo Paddle
+                        </h3>
+                        <p class="product-features">
+                            Precision Ball Handling · Hollow Blade · Quick Length Adjustment
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card" data-category="paddles">
+                    <div class="product-image-swap">
+                        <img class="product-image-primary" src="images/product/paddle/023_1.png" alt="Carbon Fiber Paddle" />
+                        <img class="product-image-secondary" data-src="images/product/paddle/023_2.png" alt="Carbon Fiber Paddle alternate view" />
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">
+                            PADDLES
+                        </span>
+                        <h3>
+                            Horizon Aluminum 1-Piece Floating Canoe Paddle
+                        </h3>
+                        <p class="product-features">
+                            Floating Foam Grip · Ergonomic T-Grip · Ideal For Rental Fleets
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card" data-category="paddles">
+                    <div class="product-image-swap">
+                        <img class="product-image-primary" src="images/product/paddle/036_1.jpg" alt="Carbon Fiber Paddle" />
+                        <img class="product-image-secondary" data-src="images/product/paddle/036_2.png" alt="Carbon Fiber Paddle alternate view" />
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">
+                            PADDLES
+                        </span>
+                        <h3>
+                            Alps Full Carbon Bent-Shaft <br>2-Piece Kayak Paddle
+                        </h3>
+                        <p class="product-features">
+                            High-Angle Stroke Power · Ergonomic Bent Shaft · Touring & Whitewater Ready
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card" data-category="accessories">
+                    <div class="product-image-swap">
+                        <img class="product-image-primary" src="images/product/accessories/coiled leash_1.png" alt="Classic High-Elastic TPU SUP &amp; Surfboard Coiled Leash" />
+                        <img class="product-image-secondary" data-src="images/product/accessories/coiled leash_2.png" alt="Classic High-Elastic TPU SUP &amp; Surfboard Coiled Leash alternate view" />
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">
+                            ACCESSORIES
+                        </span>
+                        <h3>
+                            Classic High-Elastic TPU SUP & Surfboard Coiled Leash
+                        </h3>
+                        <p class="product-features">
+                            High-Elastic TPU Cord · Anti-Tangle Coiled Design · Padded Neoprene Cuff
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card" data-category="accessories">
+                    <div class="product-image-swap">
+                        <img class="product-image-primary" src="images/product/accessories/round kayak sail_1.png" alt="Classic High-Elastic TPU SUP &amp; Surfboard Coiled Leash" />
+                        <img class="product-image-secondary" data-src="images/product/accessories/round kayak sail_2.png" alt="Classic High-Elastic TPU SUP &amp; Surfboard Coiled Leash alternate view" />
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">
+                            ACCESSORIES
+                        </span>
+                        <h3>
+                            Tailwind-R Foldable Pop-Up Round Kayak Wind Sail
+                        </h3>
+                        <p class="product-features">
+                            Waterproof Ripstop Fabric · Energy-Saving Cruising · Ultra-Compact Storage
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card" data-category="accessories">
+                    <div class="product-image-swap">
+                        <img class="product-image-primary" src="images/product/accessories/oval kayak sail_1.png" alt="Classic High-Elastic TPU SUP &amp; Surfboard Coiled Leash" />
+                        <img class="product-image-secondary" data-src="images/product/accessories/oval kayak sail_2.png" alt="Classic High-Elastic TPU SUP &amp; Surfboard Coiled Leash alternate view" />
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">
+                            ACCESSORIES
+                        </span>
+                        <h3>
+                            Tailwind-Arc Foldable Pop-Up Oval Kayak Wind Sail
+                        </h3>
+                        <p class="product-features">
+                            Oval Arch Canopy · Panoramic Clear Window · Broad Wind Catch
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card" data-category="accessories">
+                    <div class="product-image-swap">
+                        <img class="product-image-primary" src="images/product/accessories/spray skirt_1.png" alt="Classic High-Elastic TPU SUP &amp; Surfboard Coiled Leash" />
+                        <img class="product-image-secondary" data-src="images/product/accessories/spray skirt_2.png" alt="Classic High-Elastic TPU SUP &amp; Surfboard Coiled Leash alternate view" />
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">
+                            ACCESSORIES
+                        </span>
+                        <h3>
+                            Aegis Waterproof Adjustable Nylon Kayak Spray Skirt
+                        </h3>
+                        <p class="product-features">
+                            Keeps Cockpit Dry · Adjustable Elastic & Velcro Waist · Quick-Release Safety Grab Loop
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card" data-category="accessories">
+                    <div class="product-image-swap">
+                        <img class="product-image-primary" src="images/product/accessories/blue center fin_1.png" alt="Classic High-Elastic TPU SUP &amp; Surfboard Coiled Leash" />
+                        <img class="product-image-secondary" data-src="images/product/accessories/blue center fin_2.png" alt="Classic High-Elastic TPU SUP &amp; Surfboard Coiled Leash alternate view" />
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">
+                            ACCESSORIES
+                        </span>
+                        <h3>
+                            Toolless Quick-Release US Box Center Fin
+                        </h3>
+                        <p class="product-features">
+                            Flexible & Impact Resistant · Tool-Free Quick Installation · Secure Snap-In Mechanism
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card" data-category="accessories">
+                    <div class="product-image-swap">
+                        <img class="product-image-primary" src="images/product/accessories/sail bag wing bag_1.png" alt="Classic High-Elastic TPU SUP &amp; Surfboard Coiled Leash" />
+                        <img class="product-image-secondary" data-src="images/product/accessories/sail bag wing bag_2.png" alt="Classic High-Elastic TPU SUP &amp; Surfboard Coiled Leash alternate view" />
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">
+                            ACCESSORIES
+                        </span>
+                        <h3>
+                            Lightweight Nylon Drawstring Bag For Inflatable Wing & Sail
+                        </h3>
+                        <p class="product-features">
+                            Clear Document Pocket · Dual Drawstring Straps · Visible Size Marking
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card" data-category="paddles">
+                    <div class="product-image-swap">
+                        <img class="product-image-primary" src="images/product/paddle/007_1.jpg" alt="Carbon Fiber Paddle" />
+                        <img class="product-image-secondary" data-src="images/product/paddle/007_2.png" alt="Carbon Fiber Paddle alternate view" />
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">
+                            PADDLES
+                        </span>
+                        <h3>
+                            Wander Aluminum 3-Piece Adjustable SUP Paddle
+                        </h3>
+                        <p class="product-features">
+                            Even Power Stroke · Beginner & Training Ready · Easy-Handling Design
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card" data-category="paddles">
+                    <div class="product-image-swap">
+                        <img class="product-image-primary" src="images/product/paddle/012_1.png" alt="Carbon Fiber Paddle" />
+                        <img class="product-image-secondary" data-src="images/product/paddle/012_2.png" alt="Carbon Fiber Paddle alternate view" />
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">
+                            PADDLES
+                        </span>
+                        <h3>
+                            Bubble Aluminum 2-Piece Adjustable Kids SUP Paddle
+                        </h3>
+                        <p class="product-features">
+                            Slim Shaft & Small Grip · Designed for Ages <br>6 – 12 · Kid-Friendly Ergonomics
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card" data-category="accessories">
+                    <div class="product-image-swap">
+                        <img class="product-image-primary" src="images/product/accessories/blue hex fin_1.png" alt="Classic High-Elastic TPU SUP &amp; Surfboard Coiled Leash" />
+                        <img class="product-image-secondary" data-src="images/product/accessories/blue hex fin_2.png" alt="Classic High-Elastic TPU SUP &amp; Surfboard Coiled Leash alternate view" />
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">
+                            ACCESSORIES
+                        </span>
+                        <h3>
+                            Future Compatible Honeycomb Thruster Fin Set
+                        </h3>
+                        <p class="product-features">
+                            3-Fin Thruster Setup · Hexagonal Lightweight Matrix · Dynamic Flex Response
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <nav aria-label="Product pagination" class="product-pagination" id="product-pagination">
+            </nav>
+        </div>
+    </section>
+    <!-- =====================
+CATALOG DOWNLOAD
+===================== -->
+    <section class="catalog-download-section">
+        <div class="container">
+            <div class="catalog-box">
+                <h2>
+                    One-Stop Solutions for Diverse Brand Needs
+                </h2>
+                <p>
+                    Unlock limitless possibilities for your product lineup. Our extensive catalog showcases a diverse
+                    range of styles, specifications, and innovative designs crafted to satisfy varied market
+                    preferences. We know that every brand is unique—that's why we combine a massive product matrix with
+                    flexible custom R&amp;D capabilities. From initial concept sketching and bespoke prototyping to
+                    full-scale customized production, we collaborate closely with you to co-create high-performing
+                    products that make your brand stand out.
+                </p>
+                <a class="btn btn-light" download="" href="document/YDYEAHSPORT product catalogue.pdf">
+                    Download Complete Catalog (PDF)
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- =====================
+FOOTER
+===================== -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h2>
+                    YD
+                </h2>
+                <p class="footer-description">
+                    We partner with global brands to design, engineer, and manufacture premium sports gear through
+                    tailored OEM/ODM and R&amp;D solutions.
+                </p>
+                <div class="footer-contact-info">
+                    <div class="footer-contact-item footer-contact-address">
+                        <h4>
+                            ADDRESS
+                        </h4>
+                        <p>
+                            No. 2 Pengwudong Road, Xiegang 523599, Dongguan, Guangdong, China
+                        </p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <h4>
+                            EMAIL
+                        </h4>
+                        <a href="mailto:bruce@ydyeahsport.com.cn">
+                            bruce@ydyeahsport.com.cn
+                        </a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <h4>
+                            PHONE
+                        </h4>
+                        <a href="tel:+8618002773610">
+                            +86 18002773610
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>
+                    DISCOVER
+                </h3>
+                <a href="index.html">
+                    HOME
+                </a>
+                <a href="products.html">
+                    PRODUCTS
+                </a>
+                <a href="about.html">
+                    ABOUT YD
+                </a>
+                <a href="contact.html">
+                    CONTACT
+                </a>
+            </div>
+            <div class="footer-social">
+                <h3>
+                    FOLLOW US
+                </h3>
+                <div class="social-icons">
+                    <a href="https://www.youtube.com/@bruceydyeahsport" target="_blank">
+                        <i aria-hidden="true" class="ri-youtube-line">
+                        </i>
+                    </a>
+                    <a href="https://www.instagram.com/ydyeahsports/" target="_blank">
+                        <i aria-hidden="true" class="ri-instagram-line">
+                        </i>
+                    </a>
+                    <a href="https://www.tiktok.com/@ydyeahsports?lang=en" target="_blank">
+                        <i aria-hidden="true" class="ri-tiktok-fill">
+                        </i>
+                    </a>
+                    <a href="https://x.com/ydyeahsport123" target="_blank">
+                        <i aria-hidden="true" class="ri-twitter-x-line">
+                        </i>
+                    </a>
+                    <a href="https://www.facebook.com/YDsportpaddle" target="_blank">
+                        <i aria-hidden="true" class="ri-facebook-fill">
+                        </i>
+                    </a>
+                    <a href="https://wa.me/8618002773610" target="_blank">
+                        <i aria-hidden="true" class="ri-whatsapp-line">
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            © YD Yeah Sport 2026
+        </div>
+    </footer>
+    <script data-cfasync="false" src="js/script.js?v=20260812-07">
+    </script>
+</body>
+
+</html>
