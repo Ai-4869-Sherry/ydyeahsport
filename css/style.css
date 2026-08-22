@@ -6228,3 +6228,34 @@ header.menu-open .nav-toggle span:nth-child(3) {
         flex-basis: auto;
     }
 }
+
+
+/* 2026-08-22 — Final requested refinements */
+/* Home Featured Products + Products Product Showcase: square card corners. */
+.product-showcase-section .product-card,
+.featured-products-section .product-card {
+    border-radius: 0 !important;
+}
+
+/* Contact / Get In Touch: icons and channel titles are links too. */
+.get-in-touch-section a.contact-icon,
+.get-in-touch-section .contact-title-link {
+    text-decoration: none;
+}
+
+.get-in-touch-section a.contact-icon {
+    cursor: pointer;
+    transition: color .25s ease;
+}
+
+.get-in-touch-section .contact-title-link {
+    color: inherit;
+    transition: color .25s ease;
+}
+
+.get-in-touch-section a.contact-icon:hover,
+.get-in-touch-section a.contact-icon:focus-visible,
+.get-in-touch-section .contact-title-link:hover,
+.get-in-touch-section .contact-title-link:focus-visible {
+    color: #0060A9;
+}
