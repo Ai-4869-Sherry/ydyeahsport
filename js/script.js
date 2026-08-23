@@ -31,6 +31,7 @@ setInterval(changeHero, 5000);
 
 /* =========================
 PRODUCT FILTER + PAGINATION
+D1-POWERED PRODUCT SHOWCASE
 ========================= */
 
 const PRODUCT_PAGE_SIZE = 20;
@@ -74,6 +75,18 @@ function getPaginationItems(currentPage, totalPages) {
     ];
 }
 
+function setProductStatus(message = "", isError = false) {
+    const status = document.getElementById("product-status");
+
+    if (!status) {
+        return;
+    }
+
+    status.textContent = message;
+    status.hidden = !message;
+    status.classList.toggle("is-error", Boolean(isError));
+}
+
 function renderProductPagination(totalPages) {
     const pagination = document.getElementById("product-pagination");
 
@@ -82,6 +95,10 @@ function renderProductPagination(totalPages) {
     }
 
     pagination.innerHTML = "";
+
+    if (totalPages <= 0) {
+        return;
+    }
 
     const previousButton = document.createElement("button");
     previousButton.className = "product-page-arrow";
@@ -137,14 +154,30 @@ function renderProductPagination(totalPages) {
 
 function renderProductPage() {
     const allProducts = getShowcaseProducts();
+    const pagination = document.getElementById("product-pagination");
 
     if (!allProducts.length) {
+        if (pagination) {
+            pagination.innerHTML = "";
+        }
         return;
     }
 
     const filteredProducts = getFilteredShowcaseProducts();
-    const totalPages = Math.max(1, Math.ceil(filteredProducts.length / PRODUCT_PAGE_SIZE));
 
+    if (!filteredProducts.length) {
+        allProducts.forEach(product => {
+            product.style.display = "none";
+        });
+
+        setProductStatus("No products found in this category.");
+        renderProductPagination(0);
+        return;
+    }
+
+    setProductStatus("");
+
+    const totalPages = Math.ceil(filteredProducts.length / PRODUCT_PAGE_SIZE);
     activeProductPage = Math.max(1, Math.min(activeProductPage, totalPages));
 
     const pageStart = (activeProductPage - 1) * PRODUCT_PAGE_SIZE;
@@ -160,7 +193,12 @@ function renderProductPage() {
 
 function setProductPage(page) {
     const filteredProducts = getFilteredShowcaseProducts();
-    const totalPages = Math.max(1, Math.ceil(filteredProducts.length / PRODUCT_PAGE_SIZE));
+
+    if (!filteredProducts.length) {
+        return;
+    }
+
+    const totalPages = Math.ceil(filteredProducts.length / PRODUCT_PAGE_SIZE);
     const nextPage = Math.max(1, Math.min(page, totalPages));
 
     if (nextPage === activeProductPage) {
@@ -177,7 +215,7 @@ function setProductPage(page) {
 }
 
 function filterProducts(category, button) {
-    activeProductCategory = category || "all";
+    activeProductCategory = String(category || "all").trim().toLowerCase();
     activeProductPage = 1;
 
     document.querySelectorAll(".filter-btn").forEach(filterButton => {
@@ -193,17 +231,146 @@ function filterProducts(category, button) {
     renderProductPage();
 }
 
-renderProductPage();
+function getProductDisplayTitle(product) {
+    return String(
+        product.title || product.product_name || product.YD_sku || "Product"
+    ).trim();
+}
 
+function appendTextWithLineBreaks(element, value) {
+    const parts = String(value || "").split(/<br\s*\/?\s*>/gi);
 
+    parts.forEach((part, index) => {
+        if (index > 0) {
+            element.appendChild(document.createElement("br"));
+        }
+        element.appendChild(document.createTextNode(part));
+    });
+}
+
+function createProductCard(product) {
+    const category = String(product.category || "").trim();
+    const normalizedCategory = category.toLowerCase();
+    const title = getProductDisplayTitle(product);
+    const plainTitle = title.replace(/<br\s*\/?\s*>/gi, " ").replace(/\s+/g, " ").trim();
+
+    const card = document.createElement("div");
+    card.className = "product-card";
+    card.dataset.category = normalizedCategory;
+
+    if (product.YD_sku) {
+        card.dataset.sku = String(product.YD_sku).trim();
+    }
+
+    const imageSwap = document.createElement("div");
+    imageSwap.className = "product-image-swap";
+
+    const primaryImage = document.createElement("img");
+    primaryImage.className = "product-image-primary";
+    primaryImage.alt = plainTitle;
+    primaryImage.loading = "lazy";
+    primaryImage.decoding = "async";
+
+    if (product.img_1) {
+        primaryImage.src = String(product.img_1).trim();
+    }
+
+    imageSwap.appendChild(primaryImage);
+
+    if (product.img_2) {
+        const secondaryImage = document.createElement("img");
+        secondaryImage.className = "product-image-secondary";
+        secondaryImage.dataset.src = String(product.img_2).trim();
+        secondaryImage.alt = `${plainTitle} alternate view`;
+        secondaryImage.loading = "lazy";
+        secondaryImage.decoding = "async";
+        imageSwap.appendChild(secondaryImage);
+    }
+
+    const content = document.createElement("div");
+    content.className = "product-content";
+
+    const tag = document.createElement("span");
+    tag.className = "product-tag";
+    tag.textContent = category.toUpperCase();
+
+    const heading = document.createElement("h3");
+    appendTextWithLineBreaks(heading, title);
+
+    content.appendChild(tag);
+    content.appendChild(heading);
+
+    if (product.feature) {
+        const features = document.createElement("p");
+        features.className = "product-features";
+        features.textContent = String(product.feature).trim();
+        content.appendChild(features);
+    }
+
+    card.appendChild(imageSwap);
+    card.appendChild(content);
+
+    return card;
+}
+
+async function loadProducts() {
+    const productGrid = document.getElementById("product-grid");
+
+    if (!productGrid) {
+        return;
+    }
+
+    setProductStatus("Loading products…");
+    renderProductPagination(0);
+
+    try {
+        const response = await fetch("/api/products", {
+            headers: {
+                Accept: "application/json"
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error(`Product API returned HTTP ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        if (!data.success || !Array.isArray(data.products)) {
+            throw new Error("Product API returned an invalid response");
+        }
+
+        productGrid.replaceChildren();
+
+        data.products.forEach(product => {
+            productGrid.appendChild(createProductCard(product));
+        });
+
+        if (!data.products.length) {
+            setProductStatus("No products are currently available.");
+            renderProductPagination(0);
+            return;
+        }
+
+        initializeProductImageSwaps(productGrid);
+        renderProductPage();
+    } catch (error) {
+        console.error("Failed to load products:", error);
+        productGrid.replaceChildren();
+        renderProductPagination(0);
+        setProductStatus("Products are temporarily unavailable. Please try again later.", true);
+    }
+}
+
+loadProducts();
 
 
 /* =========================
 PRODUCT ALTERNATE IMAGE PRELOAD
 ========================= */
 
-(function initializeProductImageSwaps() {
-    document
+function initializeProductImageSwaps(root = document) {
+    root
         .querySelectorAll(".product-image-swap .product-image-secondary[data-src]")
         .forEach(secondaryImage => {
             const alternateSource = secondaryImage.getAttribute("data-src");
@@ -223,7 +390,9 @@ PRODUCT ALTERNATE IMAGE PRELOAD
 
             preloader.src = alternateSource;
         });
-})();
+}
+
+initializeProductImageSwaps();
 
 
 /* =========================
