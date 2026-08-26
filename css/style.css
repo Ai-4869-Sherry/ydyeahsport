@@ -6260,7 +6260,7 @@ header.menu-open .nav-toggle span:nth-child(3) {
     color: #0060A9;
 }
 
-/* 2026-08-23 — D1-powered Product Showcase loading / empty / error status */
+/* Product Showcase loading / empty / error status */
 .product-showcase-section .product-status {
     margin: 28px 0 0;
     text-align: center;
@@ -6273,3 +6273,17 @@ header.menu-open .nav-toggle span:nth-child(3) {
     color: #9f2f2f;
 }
 
+
+
+/* Local JSON dynamic Featured Products status */
+.featured-products-section .featured-product-status {
+    margin: 28px 0 0;
+    text-align: center;
+    color: #66727c;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.featured-products-section .featured-product-status.is-error {
+    color: #9f2f2f;
+}

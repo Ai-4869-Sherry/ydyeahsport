@@ -5,13 +5,165 @@ YD WEBSITE JAVASCRIPT
 
 
 /* =========================
-PRODUCT FILTER + PAGINATION
-D1-POWERED PRODUCT SHOWCASE
+PRODUCT DATA SOURCE
+LOCAL JSON ONLY
 ========================= */
 
+const PRODUCT_DATA_URL = "data/product-card.json";
 const PRODUCT_PAGE_SIZE = 20;
+
 let activeProductCategory = "all";
 let activeProductPage = 1;
+
+async function fetchProductData() {
+    if (window.location.protocol === "file:") {
+        throw new Error(
+            "Local JSON cannot be loaded reliably from file://. Run the site with VS Code Live Server or another local HTTP server."
+        );
+    }
+
+    const response = await fetch(PRODUCT_DATA_URL, {
+        cache: "no-store",
+        headers: {
+            Accept: "application/json"
+        }
+    });
+
+    if (!response.ok) {
+        throw new Error(`Product data returned HTTP ${response.status}`);
+    }
+
+    const products = await response.json();
+
+    if (!Array.isArray(products)) {
+        throw new Error("product-card.json must contain a top-level JSON array");
+    }
+
+    return products;
+}
+
+
+/* =========================
+PRODUCT CARD BUILDER
+========================= */
+
+function getProductDisplayTitle(product) {
+    return String(
+        product.title || product.product_name || product.YD_sku || "Product"
+    ).trim();
+}
+
+function appendTextWithLineBreaks(element, value) {
+    const parts = String(value || "").split(/<br\s*\/?\s*>/gi);
+
+    parts.forEach((part, index) => {
+        if (index > 0) {
+            element.appendChild(document.createElement("br"));
+        }
+        element.appendChild(document.createTextNode(part));
+    });
+}
+
+function createProductCard(product) {
+    const category = String(product.category || "").trim();
+    const normalizedCategory = category.toLowerCase();
+    const title = getProductDisplayTitle(product);
+    const plainTitle = title
+        .replace(/<br\s*\/?\s*>/gi, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+
+    const card = document.createElement("div");
+    card.className = "product-card";
+    card.dataset.category = normalizedCategory;
+
+    if (product.YD_sku) {
+        card.dataset.sku = String(product.YD_sku).trim();
+    }
+
+    const imageSwap = document.createElement("div");
+    imageSwap.className = "product-image-swap";
+
+    const primaryImage = document.createElement("img");
+    primaryImage.className = "product-image-primary";
+    primaryImage.alt = plainTitle;
+    primaryImage.loading = "lazy";
+    primaryImage.decoding = "async";
+
+    if (product.img_1) {
+        primaryImage.src = String(product.img_1).trim();
+    }
+
+    imageSwap.appendChild(primaryImage);
+
+    if (product.img_2) {
+        const secondaryImage = document.createElement("img");
+        secondaryImage.className = "product-image-secondary";
+        secondaryImage.dataset.src = String(product.img_2).trim();
+        secondaryImage.alt = `${plainTitle} alternate view`;
+        secondaryImage.loading = "lazy";
+        secondaryImage.decoding = "async";
+        imageSwap.appendChild(secondaryImage);
+    }
+
+    const content = document.createElement("div");
+    content.className = "product-content";
+
+    const tag = document.createElement("span");
+    tag.className = "product-tag";
+    tag.textContent = category.toUpperCase();
+
+    const heading = document.createElement("h3");
+    appendTextWithLineBreaks(heading, title);
+
+    content.appendChild(tag);
+    content.appendChild(heading);
+
+    if (product.feature) {
+        const features = document.createElement("p");
+        features.className = "product-features";
+        features.textContent = String(product.feature).trim();
+        content.appendChild(features);
+    }
+
+    card.appendChild(imageSwap);
+    card.appendChild(content);
+
+    return card;
+}
+
+
+/* =========================
+PRODUCT IMAGE HOVER PRELOAD
+========================= */
+
+function initializeProductImageSwaps(root = document) {
+    root
+        .querySelectorAll(".product-image-swap .product-image-secondary[data-src]")
+        .forEach(secondaryImage => {
+            const alternateSource = secondaryImage.getAttribute("data-src");
+            const swapContainer = secondaryImage.closest(".product-image-swap");
+
+            if (!alternateSource || !swapContainer) {
+                return;
+            }
+
+            const preloader = new Image();
+
+            preloader.addEventListener("load", function () {
+                secondaryImage.src = alternateSource;
+                secondaryImage.removeAttribute("data-src");
+                swapContainer.classList.add("is-swap-ready");
+            });
+
+            preloader.src = alternateSource;
+        });
+}
+
+
+/* =========================
+PRODUCT SHOWCASE FILTER + PAGINATION
+========================= */
 
 function getShowcaseProducts() {
     return Array.from(
@@ -206,89 +358,7 @@ function filterProducts(category, button) {
     renderProductPage();
 }
 
-function getProductDisplayTitle(product) {
-    return String(
-        product.title || product.product_name || product.YD_sku || "Product"
-    ).trim();
-}
-
-function appendTextWithLineBreaks(element, value) {
-    const parts = String(value || "").split(/<br\s*\/?\s*>/gi);
-
-    parts.forEach((part, index) => {
-        if (index > 0) {
-            element.appendChild(document.createElement("br"));
-        }
-        element.appendChild(document.createTextNode(part));
-    });
-}
-
-function createProductCard(product) {
-    const category = String(product.category || "").trim();
-    const normalizedCategory = category.toLowerCase();
-    const title = getProductDisplayTitle(product);
-    const plainTitle = title.replace(/<br\s*\/?\s*>/gi, " ").replace(/\s+/g, " ").trim();
-
-    const card = document.createElement("div");
-    card.className = "product-card";
-    card.dataset.category = normalizedCategory;
-
-    if (product.YD_sku) {
-        card.dataset.sku = String(product.YD_sku).trim();
-    }
-
-    const imageSwap = document.createElement("div");
-    imageSwap.className = "product-image-swap";
-
-    const primaryImage = document.createElement("img");
-    primaryImage.className = "product-image-primary";
-    primaryImage.alt = plainTitle;
-    primaryImage.loading = "lazy";
-    primaryImage.decoding = "async";
-
-    if (product.img_1) {
-        primaryImage.src = product.img_1;
-    }
-
-    imageSwap.appendChild(primaryImage);
-
-    if (product.img_2) {
-        const secondaryImage = document.createElement("img");
-        secondaryImage.className = "product-image-secondary";
-        secondaryImage.dataset.src = product.img_2;
-        secondaryImage.alt = `${plainTitle} alternate view`;
-        secondaryImage.loading = "lazy";
-        secondaryImage.decoding = "async";
-        imageSwap.appendChild(secondaryImage);
-    }
-
-    const content = document.createElement("div");
-    content.className = "product-content";
-
-    const tag = document.createElement("span");
-    tag.className = "product-tag";
-    tag.textContent = category.toUpperCase();
-
-    const heading = document.createElement("h3");
-    appendTextWithLineBreaks(heading, title);
-
-    content.appendChild(tag);
-    content.appendChild(heading);
-
-    if (product.feature) {
-        const features = document.createElement("p");
-        features.className = "product-features";
-        features.textContent = String(product.feature).trim();
-        content.appendChild(features);
-    }
-
-    card.appendChild(imageSwap);
-    card.appendChild(content);
-
-    return card;
-}
-
-async function loadProducts() {
+async function loadProductShowcase() {
     const productGrid = document.getElementById("product-grid");
 
     if (!productGrid) {
@@ -299,29 +369,15 @@ async function loadProducts() {
     renderProductPagination(0);
 
     try {
-        const response = await fetch("/api/products", {
-            headers: {
-                Accept: "application/json"
-            }
-        });
-
-        if (!response.ok) {
-            throw new Error(`Product API returned HTTP ${response.status}`);
-        }
-
-        const data = await response.json();
-
-        if (!data.success || !Array.isArray(data.products)) {
-            throw new Error("Product API returned an invalid response");
-        }
+        const products = await fetchProductData();
 
         productGrid.replaceChildren();
 
-        data.products.forEach(product => {
+        products.forEach(product => {
             productGrid.appendChild(createProductCard(product));
         });
 
-        if (!data.products.length) {
+        if (!products.length) {
             setProductStatus("No products are currently available.");
             renderProductPagination(0);
             return;
@@ -330,43 +386,76 @@ async function loadProducts() {
         initializeProductImageSwaps(productGrid);
         renderProductPage();
     } catch (error) {
-        console.error("Failed to load products:", error);
+        console.error("Failed to load Product Showcase:", error);
         productGrid.replaceChildren();
         renderProductPagination(0);
-        setProductStatus("Products are temporarily unavailable. Please try again later.", true);
+
+        const message = window.location.protocol === "file:"
+            ? "Local product data requires a local web server. Open this project with VS Code Live Server instead of double-clicking the HTML file."
+            : "Products could not be loaded from data/product-card.json.";
+
+        setProductStatus(message, true);
     }
 }
 
-loadProducts();
-
 
 /* =========================
-PRODUCT ALTERNATE IMAGE PRELOAD
+HOME FEATURED PRODUCTS
+LOCAL JSON: home = 1
 ========================= */
 
-function initializeProductImageSwaps(root = document) {
-    root
-        .querySelectorAll(".product-image-swap .product-image-secondary[data-src]")
-        .forEach(secondaryImage => {
-            const alternateSource = secondaryImage.getAttribute("data-src");
-            const swapContainer = secondaryImage.closest(".product-image-swap");
+function setFeaturedProductStatus(message = "", isError = false) {
+    const status = document.getElementById("featured-product-status");
 
-            if (!alternateSource || !swapContainer) {
-                return;
-            }
+    if (!status) {
+        return;
+    }
 
-            const preloader = new Image();
-
-            preloader.addEventListener("load", function () {
-                secondaryImage.src = alternateSource;
-                secondaryImage.removeAttribute("data-src");
-                swapContainer.classList.add("is-swap-ready");
-            });
-
-            preloader.src = alternateSource;
-        });
+    status.textContent = message;
+    status.hidden = !message;
+    status.classList.toggle("is-error", Boolean(isError));
 }
 
+async function loadFeaturedProducts() {
+    const featuredGrid = document.getElementById("featured-products-grid");
+
+    if (!featuredGrid) {
+        return;
+    }
+
+    setFeaturedProductStatus("Loading featured products…");
+
+    try {
+        const products = await fetchProductData();
+        const featuredProducts = products.filter(product => Number(product.home) === 1);
+
+        featuredGrid.replaceChildren();
+
+        featuredProducts.forEach(product => {
+            featuredGrid.appendChild(createProductCard(product));
+        });
+
+        if (!featuredProducts.length) {
+            setFeaturedProductStatus("No featured products are currently selected.");
+            return;
+        }
+
+        setFeaturedProductStatus("");
+        initializeProductImageSwaps(featuredGrid);
+    } catch (error) {
+        console.error("Failed to load Featured Products:", error);
+        featuredGrid.replaceChildren();
+
+        const message = window.location.protocol === "file:"
+            ? "Local product data requires a local web server. Open this project with VS Code Live Server instead of double-clicking the HTML file."
+            : "Featured products could not be loaded from data/product-card.json.";
+
+        setFeaturedProductStatus(message, true);
+    }
+}
+
+loadProductShowcase();
+loadFeaturedProducts();
 initializeProductImageSwaps();
 
 
