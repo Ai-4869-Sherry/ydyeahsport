@@ -1,242 +1,242 @@
 [
-  {
-    "YD_sku": "CCC-033",
-    "category": "PADDLES",
-    "product_name": "Skydome",
-    "title": "Skydome Full Carbon 3-Piece Adjustable SUP Paddle",
-    "feature": "Innovative Vortex Lock · Anti-Twist System · Sandblasted Matte Grip",
-    "img_1": "images/products/paddles/CCC-033-1.png",
-    "img_2": "images/products/paddles/CCC-033-2.png",
-    "home": 1
-  },
-  {
-    "YD_sku": "V1",
-    "category": "INFLATABLES",
-    "product_name": "XXX",
-    "title": "XXX",
-    "feature": "XXX",
-    "img_1": "images/products/inflatables/V1-1.jpg",
-    "img_2": "images/products/inflatables/V1-2.jpg",
-    "home": 0
-  },
-  {
-    "YD_sku": "H3-1310",
-    "category": "HYDROFOILS",
-    "product_name": "Dolphin",
-    "title": "Dolphin Hybrid Carbon Wings<br>All-Round Hydrofoil Set",
-    "feature": "Early & Stable Lift · Hydrodynamic Streamline · Carbon Fiber Wings",
-    "img_1": "images/products/hydrofoils/H3-1310-1.jpg",
-    "img_2": "images/products/hydrofoils/H3-1310-2.png",
-    "home": 1
-  },
-  {
-    "YD_sku": "T1",
-    "category": "HYDROFOILS",
-    "product_name": null,
-    "title": "Full Carbon Fiber Foil Board<br>T-Handlebar For Beginners",
-    "feature": "Enhanced Balance & Control · Foil Scooter Conversion · Non-Slip Ergonomic Grips",
-    "img_1": "images/products/hydrofoils/T1-1.png",
-    "img_2": "images/products/hydrofoils/T1-2.png",
-    "home": 0
-  },
-  {
-    "YD_sku": "B4",
-    "category": "BOARDS",
-    "product_name": "Magnet",
-    "title": "Magnet Foam-Core Full Carbon Hydrofoil Board",
-    "feature": "High Rigidity & Easy Carry · Universal Hydrofoil Mount · Non-Slip EVA Traction Pad",
-    "img_1": "images/products/boards/B4-1.png",
-    "img_2": "images/products/boards/B4-2.png",
-    "home": 1
-  },
-  {
-    "YD_sku": null,
-    "category": "ACCESSORIES",
-    "product_name": null,
-    "title": "Compact Double Action Hand Pump With Pressure Gauge",
-    "feature": "Inflate & Deflate Modes · Detachable Compact Design · Integrated Pressure Gauge",
-    "img_1": "images/products/accessories/small-pump-1.jpg",
-    "img_2": "images/products/accessories/small-pump-2.png",
-    "home": 0
-  },
-  {
-    "YD_sku": "CCC-033",
-    "category": "PADDLES",
-    "product_name": "Laurel",
-    "title": "Laurel Premium Full Carbon<br>5-Piece Kayak Paddle",
-    "feature": "Compact Storage · Multi-Angle Adjustable · High Stroke Efficiency",
-    "img_1": "images/products/paddles/CCC-026-1.png",
-    "img_2": "images/products/paddles/CCC-026-2.png",
-    "home": 0
-  },
-  {
-    "YD_sku": "CCC-038",
-    "category": "PADDLES",
-    "product_name": "Virga",
-    "title": "Virga Full Carbon 2-Piece Touring Greenland Paddle",
-    "feature": "Effortless Rolling & Bracing · Long-Distance Touring · Flatwater Efficiency",
-    "img_1": "images/products/paddles/CCC-038-1.png",
-    "img_2": "images/products/paddles/CCC-038-2.png",
-    "home": 0
-  },
-  {
-    "YD_sku": null,
-    "category": "PADDLES",
-    "product_name": "Continent",
-    "title": "Continent Aluminum 2-Piece Adjustable Land Paddle",
-    "feature": "Replaceable Rubber Tip · High-Grip Pavement Traction · Longboard & Skate Ready",
-    "img_1": "images/products/paddles/land-paddle-1.png",
-    "img_2": "images/products/paddles/land-paddle-2.png",
-    "home": 0
-  },
-  {
-    "YD_sku": "CCC-022",
-    "category": "PADDLES",
-    "product_name": "Orient Ultra",
-    "title": "Orient Ultra Full Carbon 2-Piece Adjustable Dragon Boat Paddle",
-    "feature": "Precise Length Adjust · Full Carbon Rigidity · Optimized For Racing",
-    "img_1": "images/products/paddles/CCC-022-1.png",
-    "img_2": "images/products/paddles/CCC-022-2.png",
-    "home": 0
-  },
-  {
-    "YD_sku": "WWW-022",
-    "category": "PADDLES",
-    "product_name": "Orient",
-    "title": "Orient Laminated Natural Wood 1-Piece Dragon Boat Paddle",
-    "feature": "Natural Wood Grain · Reinforced Blade Tip · Authentic Heritage Feel",
-    "img_1": "images/products/paddles/WWW-022-1.png",
-    "img_2": "images/products/paddles/WWW-022-2.png",
-    "home": 0
-  },
-  {
-    "YD_sku": "PAP-028",
-    "category": "PADDLES",
-    "product_name": "Danube",
-    "title": "Danube Aluminium 3-Piece Recreational Kayak Paddle",
-    "feature": "Cost-Effective & Durable · Beginner-Friendly · Ideal For Rental Fleets",
-    "img_1": "images/products/paddles/PAP-028-1.png",
-    "img_2": "images/products/paddles/PAP-028-2.png",
-    "home": 0
-  },
-  {
-    "YD_sku": null,
-    "category": "PADDLES",
-    "product_name": "Carnival",
-    "title": "Carnival Aluminum 2-Piece Adjustable SUP Polo Paddle",
-    "feature": "Precision Ball Handling · Hollow Blade · Quick Length Adjustment",
-    "img_1": "images/products/paddles/polo-paddle-1.jpg",
-    "img_2": "images/products/paddles/polo-paddle-2.png",
-    "home": 0
-  },
-  {
-    "YD_sku": "PAP-023",
-    "category": "PADDLES",
-    "product_name": "Horizon",
-    "title": "Horizon Aluminum 1-Piece Floating Canoe Paddle",
-    "feature": "Floating Foam Grip · Ergonomic T-Grip · Ideal For Rental Fleets",
-    "img_1": "images/products/paddles/PAP-023-1.png",
-    "img_2": "images/products/paddles/PAP-023-2.png",
-    "home": 0
-  },
-  {
-    "YD_sku": "CCC-036",
-    "category": "PADDLES",
-    "product_name": "Alps",
-    "title": "Alps Full Carbon Bent-Shaft<br>2-Piece Kayak Paddle",
-    "feature": "High-Angle Stroke Power · Ergonomic Bent Shaft · Touring & Whitewater Ready",
-    "img_1": "images/products/paddles/CCC-036-1.jpg",
-    "img_2": "images/products/paddles/CCC-036-2.png",
-    "home": 0
-  },
-  {
-    "YD_sku": null,
-    "category": "ACCESSORIES",
-    "product_name": null,
-    "title": "Classic High-Elastic TPU SUP & Surfboard Coiled Leash",
-    "feature": "High-Elastic TPU Cord · Anti-Tangle Coiled Design · Padded Neoprene Cuff",
-    "img_1": "images/products/accessories/coiled-leash-1.png",
-    "img_2": "images/products/accessories/coiled-leash-2.png",
-    "home": 0
-  },
-  {
-    "YD_sku": null,
-    "category": "ACCESSORIES",
-    "product_name": "Tailwind-R",
-    "title": "Tailwind-R Foldable Pop-Up Round Kayak Wind Sail",
-    "feature": "Waterproof Ripstop Fabric · Energy-Saving Cruising · Ultra-Compact Storage",
-    "img_1": "images/products/accessories/round-kayak-sail-1.png",
-    "img_2": "images/products/accessories/round-kayak-sail-2.png",
-    "home": 0
-  },
-  {
-    "YD_sku": null,
-    "category": "ACCESSORIES",
-    "product_name": "Tailwind-Arc",
-    "title": "Tailwind-Arc Foldable Pop-Up Oval Kayak Wind Sail",
-    "feature": "Oval Arch Canopy · Panoramic Clear Window · Broad Wind Catch",
-    "img_1": "images/products/accessories/oval-kayak-sail-1.png",
-    "img_2": "images/products/accessories/oval-kayak-sail-2.png",
-    "home": 0
-  },
-  {
-    "YD_sku": null,
-    "category": "ACCESSORIES",
-    "product_name": "Aegis",
-    "title": "Aegis Waterproof Adjustable Nylon Kayak Spray Skirt",
-    "feature": "Keeps Cockpit Dry · Adjustable Elastic & Velcro Waist · Quick-Release Safety Grab Loop",
-    "img_1": "images/products/accessories/spray-skirt-1.png",
-    "img_2": "images/products/accessories/spray-skirt-2.png",
-    "home": 1
-  },
-  {
-    "YD_sku": null,
-    "category": "ACCESSORIES",
-    "product_name": null,
-    "title": "Toolless Quick-Release US Box Center Fin",
-    "feature": "Flexible & Impact Resistant · Tool-Free Quick Installation · Secure Snap-In Mechanism",
-    "img_1": "images/products/accessories/blue-center-fin-1.png",
-    "img_2": "images/products/accessories/blue-center-fin-2.png",
-    "home": 0
-  },
-  {
-    "YD_sku": null,
-    "category": "ACCESSORIES",
-    "product_name": null,
-    "title": "Lightweight Nylon Drawstring Bag For Inflatable Wing & Sail",
-    "feature": "Clear Document Pocket · Dual Drawstring Straps · Visible Size Marking",
-    "img_1": "images/products/accessories/sail-bag-wing-bag-1.png",
-    "img_2": "images/products/accessories/sail-bag-wing-bag-2.png",
-    "home": 0
-  },
-  {
-    "YD_sku": "PAP-007",
-    "category": "PADDLES",
-    "product_name": "Wander",
-    "title": "Wander Aluminum 3-Piece Adjustable SUP Paddle",
-    "feature": "Even Power Stroke · Beginner & Training Ready · Easy-Handling Design",
-    "img_1": "images/products/paddles/PAP-007-1.jpg",
-    "img_2": "images/products/paddles/PAP-007-2.jpg",
-    "home": 0
-  },
-  {
-    "YD_sku": "PAP-012",
-    "category": "PADDLES",
-    "product_name": "Bubble",
-    "title": "Bubble Aluminum 2-Piece Adjustable Kids SUP Paddle",
-    "feature": "Slim Shaft & Small Grip · Designed for Ages<br>6 – 12 · Kid-Friendly Ergonomics",
-    "img_1": "images/products/paddles/PAP-012-1.png",
-    "img_2": "images/products/paddles/PAP-012-2.png",
-    "home": 0
-  },
-  {
-    "YD_sku": null,
-    "category": "ACCESSORIES",
-    "product_name": null,
-    "title": "Future Compatible Honeycomb Thruster Fin Set",
-    "feature": "3-Fin Thruster Setup · Hexagonal Lightweight Matrix · Dynamic Flex Response",
-    "img_1": "images/products/accessories/blue-hex-fin-1.png",
-    "img_2": "images/products/accessories/blue-hex-fin-2.png",
-    "home": 0
-  }
+    {
+        "YD_sku": "CCC-033",
+        "category": "PADDLES",
+        "product_name": "Skydome",
+        "title": "Skydome Full Carbon 3-Piece Adjustable SUP Paddle",
+        "feature": "Innovative Vortex Lock · Anti-Twist System · Sandblasted Matte Grip",
+        "img_1": "images/products/paddles/CCC-033-1.png",
+        "img_2": "images/products/paddles/CCC-033-2.png",
+        "home": 1
+    },
+    {
+        "YD_sku": "V1",
+        "category": "INFLATABLES",
+        "product_name": "XXX",
+        "title": "XXX",
+        "feature": "XXX",
+        "img_1": "images/products/inflatables/V1-1.jpg",
+        "img_2": "images/products/inflatables/V1-2.jpg",
+        "home": 0
+    },
+    {
+        "YD_sku": "H3-1310",
+        "category": "HYDROFOILS",
+        "product_name": "Dolphin",
+        "title": "Dolphin Hybrid Carbon Wings<br>All-Round Hydrofoil Set",
+        "feature": "Early & Stable Lift · Hydrodynamic Streamline · Carbon Fiber Wings",
+        "img_1": "images/products/hydrofoils/H3-1310-1.jpg",
+        "img_2": "images/products/hydrofoils/H3-1310-2.png",
+        "home": 1
+    },
+    {
+        "YD_sku": "T1",
+        "category": "HYDROFOILS",
+        "product_name": null,
+        "title": "Full Carbon Fiber Foil Board<br>T-Handlebar For Beginners",
+        "feature": "Enhanced Balance & Control · Foil Scooter Conversion · Non-Slip Ergonomic Grips",
+        "img_1": "images/products/hydrofoils/T1-1.png",
+        "img_2": "images/products/hydrofoils/T1-2.png",
+        "home": 0
+    },
+    {
+        "YD_sku": "B4",
+        "category": "BOARDS",
+        "product_name": "Magnet",
+        "title": "Magnet Foam-Core Full Carbon Hydrofoil Board",
+        "feature": "High Rigidity & Easy Carry · Universal Hydrofoil Mount · Non-Slip EVA Traction Pad",
+        "img_1": "images/products/boards/B4-1.png",
+        "img_2": "images/products/boards/B4-2.png",
+        "home": 1
+    },
+    {
+        "YD_sku": null,
+        "category": "ACCESSORIES",
+        "product_name": null,
+        "title": "Compact Double Action Hand Pump With Pressure Gauge",
+        "feature": "Inflate & Deflate Modes · Detachable Compact Design · Integrated Pressure Gauge",
+        "img_1": "images/products/accessories/small-pump-1.jpg",
+        "img_2": "images/products/accessories/small-pump-2.png",
+        "home": 0
+    },
+    {
+        "YD_sku": "CCC-033",
+        "category": "PADDLES",
+        "product_name": "Laurel",
+        "title": "Laurel Premium Full Carbon<br>5-Piece Kayak Paddle",
+        "feature": "Compact Storage · Multi-Angle Adjustable · High Stroke Efficiency",
+        "img_1": "images/products/paddles/CCC-026-1.png",
+        "img_2": "images/products/paddles/CCC-026-2.png",
+        "home": 0
+    },
+    {
+        "YD_sku": "CCC-038",
+        "category": "PADDLES",
+        "product_name": "Virga",
+        "title": "Virga Full Carbon 2-Piece Touring Greenland Paddle",
+        "feature": "Effortless Rolling & Bracing · Long-Distance Touring · Flatwater Efficiency",
+        "img_1": "images/products/paddles/CCC-038-1.png",
+        "img_2": "images/products/paddles/CCC-038-2.png",
+        "home": 0
+    },
+    {
+        "YD_sku": null,
+        "category": "PADDLES",
+        "product_name": "Continent",
+        "title": "Continent Aluminum 2-Piece Adjustable Land Paddle",
+        "feature": "Replaceable Rubber Tip · High-Grip Pavement Traction · Longboard & Skate Ready",
+        "img_1": "images/products/paddles/land-paddle-1.png",
+        "img_2": "images/products/paddles/land-paddle-2.png",
+        "home": 0
+    },
+    {
+        "YD_sku": "CCC-022",
+        "category": "PADDLES",
+        "product_name": "Orient Ultra",
+        "title": "Orient Ultra Full Carbon 2-Piece Adjustable Dragon Boat Paddle",
+        "feature": "Precise Length Adjust · Full Carbon Rigidity · Optimized For Racing",
+        "img_1": "images/products/paddles/CCC-022-1.png",
+        "img_2": "images/products/paddles/CCC-022-2.png",
+        "home": 0
+    },
+    {
+        "YD_sku": "WWW-022",
+        "category": "PADDLES",
+        "product_name": "Orient",
+        "title": "Orient Laminated Natural Wood 1-Piece Dragon Boat Paddle",
+        "feature": "Natural Wood Grain · Reinforced Blade Tip · Authentic Heritage Feel",
+        "img_1": "images/products/paddles/WWW-022-1.png",
+        "img_2": "images/products/paddles/WWW-022-2.png",
+        "home": 0
+    },
+    {
+        "YD_sku": "PAP-028",
+        "category": "PADDLES",
+        "product_name": "Danube",
+        "title": "Danube Aluminium 3-Piece Recreational Kayak Paddle",
+        "feature": "Cost-Effective & Durable · Beginner-Friendly · Ideal For Rental Fleets",
+        "img_1": "images/products/paddles/PAP-028-1.png",
+        "img_2": "images/products/paddles/PAP-028-2.png",
+        "home": 0
+    },
+    {
+        "YD_sku": null,
+        "category": "PADDLES",
+        "product_name": "Carnival",
+        "title": "Carnival Aluminum 2-Piece Adjustable SUP Polo Paddle",
+        "feature": "Precision Ball Handling · Hollow Blade · Quick Length Adjustment",
+        "img_1": "images/products/paddles/polo-paddle-1.jpg",
+        "img_2": "images/products/paddles/polo-paddle-2.png",
+        "home": 0
+    },
+    {
+        "YD_sku": "PAP-023",
+        "category": "PADDLES",
+        "product_name": "Horizon",
+        "title": "Horizon Aluminum 1-Piece Floating Canoe Paddle",
+        "feature": "Floating Foam Grip · Ergonomic T-Grip · Ideal For Rental Fleets",
+        "img_1": "images/products/paddles/PAP-023-1.png",
+        "img_2": "images/products/paddles/PAP-023-2.png",
+        "home": 0
+    },
+    {
+        "YD_sku": "CCC-036",
+        "category": "PADDLES",
+        "product_name": "Alps",
+        "title": "Alps Full Carbon Bent-Shaft<br>2-Piece Kayak Paddle",
+        "feature": "High-Angle Stroke Power · Ergonomic Bent Shaft · Touring & Whitewater Ready",
+        "img_1": "images/products/paddles/CCC-036-1.jpg",
+        "img_2": "images/products/paddles/CCC-036-2.png",
+        "home": 0
+    },
+    {
+        "YD_sku": null,
+        "category": "ACCESSORIES",
+        "product_name": null,
+        "title": "Classic High-Elastic TPU SUP & Surfboard Coiled Leash",
+        "feature": "High-Elastic TPU Cord · Anti-Tangle Coiled Design · Padded Neoprene Cuff",
+        "img_1": "images/products/accessories/coiled-leash-1.png",
+        "img_2": "images/products/accessories/coiled-leash-2.png",
+        "home": 0
+    },
+    {
+        "YD_sku": null,
+        "category": "ACCESSORIES",
+        "product_name": "Tailwind-R",
+        "title": "Tailwind-R Foldable Pop-Up Round Kayak Wind Sail",
+        "feature": "Waterproof Ripstop Fabric · Energy-Saving Cruising · Ultra-Compact Storage",
+        "img_1": "images/products/accessories/round-kayak-sail-1.png",
+        "img_2": "images/products/accessories/round-kayak-sail-2.png",
+        "home": 0
+    },
+    {
+        "YD_sku": null,
+        "category": "ACCESSORIES",
+        "product_name": "Tailwind-Arc",
+        "title": "Tailwind-Arc Foldable Pop-Up Oval Kayak Wind Sail",
+        "feature": "Oval Arch Canopy · Panoramic Clear Window · Broad Wind Catch",
+        "img_1": "images/products/accessories/oval-kayak-sail-1.png",
+        "img_2": "images/products/accessories/oval-kayak-sail-2.png",
+        "home": 0
+    },
+    {
+        "YD_sku": null,
+        "category": "ACCESSORIES",
+        "product_name": "Aegis",
+        "title": "Aegis Waterproof Adjustable Nylon Kayak Spray Skirt",
+        "feature": "Keeps Cockpit Dry · Adjustable Elastic & Velcro Waist · Quick-Release Safety Grab Loop",
+        "img_1": "images/products/accessories/spray-skirt-1.png",
+        "img_2": "images/products/accessories/spray-skirt-2.png",
+        "home": 1
+    },
+    {
+        "YD_sku": null,
+        "category": "ACCESSORIES",
+        "product_name": null,
+        "title": "Toolless Quick-Release US Box Center Fin",
+        "feature": "Flexible & Impact Resistant · Tool-Free Quick Installation · Secure Snap-In Mechanism",
+        "img_1": "images/products/accessories/blue-center-fin-1.png",
+        "img_2": "images/products/accessories/blue-center-fin-2.png",
+        "home": 0
+    },
+    {
+        "YD_sku": null,
+        "category": "ACCESSORIES",
+        "product_name": null,
+        "title": "Lightweight Nylon Drawstring Bag For Inflatable Wing & Sail",
+        "feature": "Clear Document Pocket · Dual Drawstring Straps · Visible Size Marking",
+        "img_1": "images/products/accessories/sail-bag-wing-bag-1.png",
+        "img_2": "images/products/accessories/sail-bag-wing-bag-2.png",
+        "home": 0
+    },
+    {
+        "YD_sku": "PAP-007",
+        "category": "PADDLES",
+        "product_name": "Wander",
+        "title": "Wander Aluminum 3-Piece Adjustable SUP Paddle",
+        "feature": "Even Power Stroke · Beginner & Training Ready · Easy-Handling Design",
+        "img_1": "images/products/paddles/PAP-007-1.jpg",
+        "img_2": "images/products/paddles/PAP-007-2.jpg",
+        "home": 0
+    },
+    {
+        "YD_sku": "PAP-012",
+        "category": "PADDLES",
+        "product_name": "Bubble",
+        "title": "Bubble Aluminum 2-Piece Adjustable Kids SUP Paddle",
+        "feature": "Slim Shaft & Small Grip · Designed for Ages<br>6 – 12 · Kid-Friendly Ergonomics",
+        "img_1": "images/products/paddles/PAP-012-1.png",
+        "img_2": "images/products/paddles/PAP-012-2.png",
+        "home": 0
+    },
+    {
+        "YD_sku": null,
+        "category": "ACCESSORIES",
+        "product_name": null,
+        "title": "Future Compatible Honeycomb Thruster Fin Set",
+        "feature": "3-Fin Thruster Setup · Hexagonal Lightweight Matrix · Dynamic Flex Response",
+        "img_1": "images/products/accessories/blue-hex-fin-1.png",
+        "img_2": "images/products/accessories/blue-hex-fin-2.png",
+        "home": 0
+    }
 ]
