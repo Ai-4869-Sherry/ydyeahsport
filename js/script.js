@@ -3,31 +3,6 @@ YD WEBSITE JAVASCRIPT
 ========================= */
 
 
-/* =========================
-HERO IMAGE SLIDER
-========================= */
-
-const heroImages = [
-    "images/banner1.jpg",
-    "images/banner2.jpg",
-    "images/banner3.jpg"
-];
-
-let heroIndex = 0;
-
-function changeHero() {
-    const hero = document.querySelector(".hero-new");
-
-    if (!hero) {
-        return;
-    }
-
-    heroIndex = (heroIndex + 1) % heroImages.length;
-    hero.style.backgroundImage = `url(${heroImages[heroIndex]})`;
-}
-
-setInterval(changeHero, 5000);
-
 
 /* =========================
 PRODUCT FILTER + PAGINATION
@@ -272,7 +247,7 @@ function createProductCard(product) {
     primaryImage.decoding = "async";
 
     if (product.img_1) {
-        primaryImage.src = String(product.img_1).trim();
+        primaryImage.src = product.img_1;
     }
 
     imageSwap.appendChild(primaryImage);
@@ -280,7 +255,7 @@ function createProductCard(product) {
     if (product.img_2) {
         const secondaryImage = document.createElement("img");
         secondaryImage.className = "product-image-secondary";
-        secondaryImage.dataset.src = String(product.img_2).trim();
+        secondaryImage.dataset.src = product.img_2;
         secondaryImage.alt = `${plainTitle} alternate view`;
         secondaryImage.loading = "lazy";
         secondaryImage.decoding = "async";
