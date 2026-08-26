@@ -37,7 +37,7 @@
     "feature": "Enhanced Balance & Control · Foil Scooter Conversion · Non-Slip Ergonomic Grips",
     "img_1": "images/products/hydrofoils/T1-1.png",
     "img_2": "images/products/hydrofoils/T1-2.png",
-    "home": 1
+    "home": 0
   },
   {
     "YD_sku": "B4",
@@ -47,7 +47,7 @@
     "feature": "High Rigidity & Easy Carry · Universal Hydrofoil Mount · Non-Slip EVA Traction Pad",
     "img_1": "images/products/boards/B4-1.png",
     "img_2": "images/products/boards/B4-2.png",
-    "home": 0
+    "home": 1
   },
   {
     "YD_sku": null,
