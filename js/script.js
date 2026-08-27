@@ -9,7 +9,7 @@ PRODUCT DATA SOURCE
 LOCAL JSON ONLY
 ========================= */
 
-const PRODUCT_DATA_URL = "data/product-card.json";
+const PRODUCT_DATA_URL = "/data/product-card.json";
 const PRODUCT_PAGE_SIZE = 20;
 
 let activeProductCategory = "all";
