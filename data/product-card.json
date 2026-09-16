@@ -50,6 +50,16 @@
         "home": 1
     },
     {
+        "YD_sku": "B1",
+        "category": "BOARDS",
+        "product_name": "Breeze",
+        "title": "Breeze Double-Layer Inflatable All-Round Windsurf SUP Board",
+        "feature": "All-Round Shape · Versatile Sail Mounting System · Travel-Friendly Inflatable Design",
+        "img_1": "/images/products/boards/B1-1.jpg",
+        "img_2": "/images/products/boards/B1-2.jpg",
+        "home": 0
+    },
+    {
         "YD_sku": null,
         "category": "ACCESSORIES",
         "product_name": null,
@@ -335,8 +345,8 @@
         "product_name": "Proteus",
         "title": "Proteus Aluminum Compact SUP/Kayak Paddle",
         "feature": "2-in-1 Convertible Design · Modular Quick-Connect System · Compact & Travel-Ready",
-        "img_1": "/images/products/paddles/PAP-027-1.png",
-        "img_2": "/images/products/paddles/PAP-027-2.png",
+        "img_1": "/images/products/paddles/PAP-027-1.jpg",
+        "img_2": "/images/products/paddles/PAP-027-2.jpg",
         "home": 0
     },
     {
@@ -365,27 +375,27 @@
         "product_name": "Waterfall",
         "title": "Waterfall Full Carbon Elite Racing SUP Paddle",
         "feature": "Raised Water-Splitting Ridge · V-Contour Blade Profile · Direct Power Transfer",
-        "img_1": "/images/products/paddles/CCC-011-1.png",
+        "img_1": "/images/products/paddles/CCC-011-1.jpg",
         "img_2": "/images/products/paddles/CCC-011-2.png",
         "home": 0
     },
     {
-        "YD_sku": "",
+        "YD_sku": "CCC-014",
         "category": "PADDLES",
-        "product_name": "",
-        "title": "",
-        "feature": "",
-        "img_1": "/images/products/paddles/CCC-014-1.png",
-        "img_2": "/images/products/paddles/CCC-014-2.png",
+        "product_name": "Bullet",
+        "title": "Bullet 3K Carbon 3-Piece Wide-Blade SUP Paddle",
+        "feature": "Broad Teardrop Blade Profile · Expanded Lower-Blade Area · Reinforced Thick Profile",
+        "img_1": "/images/products/paddles/CCC-014-1.jpg",
+        "img_2": "/images/products/paddles/CCC-014-2.jpg",
         "home": 0
     },
     {
-        "YD_sku": "",
+        "YD_sku": "CCC-020",
         "category": "PADDLES",
-        "product_name": "",
-        "title": "",
-        "feature": "",
-        "img_1": "/images/products/paddles/CCC-020-1.png",
+        "product_name": "Mach",
+        "title": "Mach 12K Carbon 3-Piece Hydrodynamic SUP Paddle",
+        "feature": "High-Gloss 12K Finish · Hydrodynamic Central Spine · Streamlined Water Entry",
+        "img_1": "/images/products/paddles/CCC-020-1.jpg",
         "img_2": "/images/products/paddles/CCC-020-2.png",
         "home": 0
     },
@@ -395,8 +405,8 @@
         "product_name": "Sonic",
         "title": "Sonic Carbon Compact Blade Racing SUP Paddle",
         "feature": "Compact Narrow Blade · Low-Resistance Blade Profile · Racing-Oriented Design",
-        "img_1": "/images/products/paddles/CCC-015-1.png",
-        "img_2": "/images/products/paddles/CCC-015-2.png",
+        "img_1": "/images/products/paddles/CCC-015-1.jpg",
+        "img_2": "/images/products/paddles/CCC-015-2.jpg",
         "home": 0
     }
 ]
