@@ -408,5 +408,85 @@
         "img_1": "/images/products/paddles/CCC-015-1.jpg",
         "img_2": "/images/products/paddles/CCC-015-2.jpg",
         "home": 0
+    },
+    {
+        "YD_sku": "CCC-009",
+        "category": "PADDLES",
+        "product_name": "Nalu",
+        "title": "",
+        "feature": "",
+        "img_1": "/images/products/paddles/CCC-009-1.jpg",
+        "img_2": "/images/products/paddles/CCC-009-2.jpg",
+        "home": 0
+    },
+    {
+        "YD_sku": "CCC-017",
+        "category": "PADDLES",
+        "product_name": "Aloha",
+        "title": "",
+        "feature": "",
+        "img_1": "/images/products/paddles/CCC-017-1.jpg",
+        "img_2": "/images/products/paddles/CCC-017-2.png",
+        "home": 0
+    },
+    {
+        "YD_sku": "CCC-019",
+        "category": "PADDLES",
+        "product_name": "Eden",
+        "title": "",
+        "feature": "",
+        "img_1": "/images/products/paddles/CCC-019-1.jpg",
+        "img_2": "/images/products/paddles/CCC-019-2.png",
+        "home": 0
+    },
+    {
+        "YD_sku": "CCC-031",
+        "category": "PADDLES",
+        "product_name": "Atlantis",
+        "title": "",
+        "feature": "",
+        "img_1": "/images/products/paddles/CCC-031-1.png",
+        "img_2": "/images/products/paddles/CCC-031-2.png",
+        "home": 0
+    },
+    	{
+        "YD_sku": "CCC-016",
+        "category": "PADDLES",
+        "product_name": "Meteor",
+        "title": "",
+        "feature": "",
+        "img_1": "/images/products/paddles/CCC-016-1.png",
+        "img_2": "/images/products/paddles/CCC-016-2.jpg",
+        "home": 0
+    },
+    	{
+        "YD_sku": "CCC-020",
+        "category": "PADDLES",
+        "product_name": "Mach",
+        "title": "",
+        "feature": "",
+        "img_1": "/images/products/paddles/CCC-020-1.png",
+        "img_2": "/images/products/paddles/CCC-020-2.jpg",
+        "home": 0
+    },
+    {
+        "YD_sku": "FFF-021",
+        "category": "PADDLES",
+        "product_name": "Vector",
+        "title": "",
+        "feature": "",
+        "img_1": "/images/products/paddles/FFF-021-1.png",
+        "img_2": "/images/products/paddles/FFF-021-2.png",
+        "home": 0
+    },
+    {
+        "YD_sku": "CCC-032",
+        "category": "PADDLES",
+        "product_name": "Impulse",
+        "title": "",
+        "feature": "",
+        "img_1": "/images/products/paddles/CCC-032-1.jpg",
+        "img_2": "/images/products/paddles/CCC-032-2.jpg",
+        "home": 0
     }
 ]
