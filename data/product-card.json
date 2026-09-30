@@ -70,7 +70,7 @@
         "home": 0
     },
     {
-        "YD_sku": "CCC-033",
+        "YD_sku": "CCC-026",
         "category": "PADDLES",
         "product_name": "Laurel",
         "title": "Laurel Premium Full Carbon<br>4-Piece Kayak Paddle",
@@ -375,7 +375,7 @@
         "product_name": "Waterfall",
         "title": "Waterfall Full Carbon Elite Racing SUP Paddle",
         "feature": "Raised Water-Splitting Ridge · V-Contour Blade Profile · Direct Power Transfer",
-        "img_1": "/images/products/paddles/CCC-011-1.jpg",
+        "img_1": "/images/products/paddles/CCC-011-1.png",
         "img_2": "/images/products/paddles/CCC-011-2.png",
         "home": 0
     },
@@ -392,10 +392,10 @@
     {
         "YD_sku": "CCC-020",
         "category": "PADDLES",
-        "product_name": "Mach",
-        "title": "Mach 12K Carbon 3-Piece Hydrodynamic SUP Paddle",
+        "product_name": "Volcano",
+        "title": "Volcano 12K Carbon 3-Piece Hydrodynamic SUP Paddle",
         "feature": "High-Gloss 12K Finish · Hydrodynamic Central Spine · Streamlined Water Entry",
-        "img_1": "/images/products/paddles/CCC-020-1.jpg",
+        "img_1": "/images/products/paddles/CCC-020-1.png",
         "img_2": "/images/products/paddles/CCC-020-2.png",
         "home": 0
     },
@@ -459,16 +459,6 @@
         "img_2": "/images/products/paddles/CCC-016-2.jpg",
         "home": 0
     },
-    	{
-        "YD_sku": "CCC-020",
-        "category": "PADDLES",
-        "product_name": "Mach",
-        "title": "",
-        "feature": "",
-        "img_1": "/images/products/paddles/CCC-020-1.png",
-        "img_2": "/images/products/paddles/CCC-020-2.jpg",
-        "home": 0
-    },
     {
         "YD_sku": "FFF-021",
         "category": "PADDLES",
@@ -480,13 +470,103 @@
         "home": 0
     },
     {
-        "YD_sku": "CCC-032",
+        "YD_sku": "CCC-010",
         "category": "PADDLES",
-        "product_name": "Impulse",
+        "product_name": "Moonrise",
         "title": "",
         "feature": "",
-        "img_1": "/images/products/paddles/CCC-032-1.jpg",
-        "img_2": "/images/products/paddles/CCC-032-2.jpg",
+        "img_1": "/images/products/paddles/CCC-010-1.png",
+        "img_2": "/images/products/paddles/CCC-010-2.png",
+        "home": 0
+    },
+    {
+        "YD_sku": "",
+        "category": "PADDLES",
+        "product_name": "",
+        "title": "",
+        "feature": "",
+        "img_1": "/images/products/paddles/CCC-017-1.jpg",
+        "img_2": "/images/products/paddles/CCC-017-2.jpg",
+        "home": 0
+    },
+    {
+        "YD_sku": "PAP-024",
+        "category": "PADDLES",
+        "product_name": "Gemini",
+        "title": "",
+        "feature": "",
+        "img_1": "/images/products/paddles/PAP-024-1.png",
+        "img_2": "/images/products/paddles/PAP-024-2.png",
+        "home": 0
+    },
+    {
+        "YD_sku": "CCC-013",
+        "category": "PADDLES",
+        "product_name": "Firefly",
+        "title": "",
+        "feature": "",
+        "img_1": "/images/products/paddles/CCC-013-1.png",
+        "img_2": "/images/products/paddles/CCC-013-2.png",
+        "home": 0
+    },
+    {
+        "YD_sku": "CCC-018",
+        "category": "PADDLES",
+        "product_name": "Pebble",
+        "title": "",
+        "feature": "",
+        "img_1": "/images/products/paddles/CCC-018-1.png",
+        "img_2": "/images/products/paddles/CCC-018-2.png",
+        "home": 0
+    },
+    {
+        "YD_sku": "PAP-030",
+        "category": "PADDLES",
+        "product_name": "",
+        "title": "",
+        "feature": "",
+        "img_1": "/images/products/paddles/PAP-030-1.png",
+        "img_2": "/images/products/paddles/PAP-030-2.jpg",
+        "home": 0
+    },
+    {
+        "YD_sku": "CCC-034",
+        "category": "PADDLES",
+        "product_name": "Thames",
+        "title": "",
+        "feature": "",
+        "img_1": "/images/products/paddles/CCC-034-1.jpg",
+        "img_2": "/images/products/paddles/CCC-034-2.png",
+        "home": 0
+    },
+    {
+        "YD_sku": "CCC-029",
+        "category": "PADDLES",
+        "product_name": "Jellyfish",
+        "title": "",
+        "feature": "",
+        "img_1": "/images/products/paddles/CCC-029-1.png",
+        "img_2": "/images/products/paddles/CCC-029-2.png",
+        "home": 0
+    },
+    {
+        "YD_sku": "",
+        "category": "PADDLES",
+        "product_name": "",
+        "title": "",
+        "feature": "",
+        "img_1": "/images/products/paddles/CCC-017-1.jpg",
+        "img_2": "/images/products/paddles/CCC-017-2.jpg",
+        "home": 0
+    },
+    {
+        "YD_sku": "BHS",
+        "category": "HYDROFOILS",
+        "product_name": "Board Hydrofoil Full Set",
+        "title": "",
+        "feature": "",
+        "img_1": "/images/products/hydrofoils/foil-board.jpg",
+        "img_2": "/images/products/hydrofoils/foil-board.png",
         "home": 0
     }
 ]
